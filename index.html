@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Convertidor</title>
+    <!-- UTILIZAREMOS BOOTSRAP 4 PARA ESTE PROYECTO PORQUE NO SE TIENE QUE DESCARGAR, SIMPLEMENTE LLAMAR -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="estails.css">
+</head>
+<body>
+    <!-- <script src="logica.js"></script> -->
+    <!-- ojo que muchas clases de aquí van a tener clases de bootstrap. No me las sé, ni las modifico, sólo las uso -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <!-- clas de 6 columnas o algo así -->
+                <h1 class="display-4 text-center mb-3">Convertidor de pesos de Ricky</h1>
+                <form>
+                    <div class="form-group">
+                <!-- no le pusimos action a este form, sino una clase de bootstrap, que es la form-group -->
+                        <input
+                        id="entradaenlbs" 
+                        type="number" 
+                        class="form-control form-control-lg" 
+                        placeholder="Pon el peso en libras...">
+                        <!-- puse un input con los siguintes atributos: que su entrada sea número, que el tipo de forma sea control-lg y que cuando no escriba nada diga: pon un número -->
+                    </div>
+                </form>
+                <div id="output">
+                    <!-- card 1: la de gramos -->
+                    <div class="card card bg-primary mb-2">
+                        <div class="card-block">
+                        <!-- el mb-2 es una clase de bootsrap que te pone un margin bottom de 2 pixeles supongo -->
+                        <!-- el class primary pone el fondo azul -->
+                        <!-- utilizamos esto para poder poner la salida -->
+                            <h4>Gramos:</h4>
+                            <div id="outputengramos">
+                                <!-- Esto es hacia donde vamos a jalar el resultado de javascript una vez que lo hayamos calculado -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- card 2 en kilogramos  -->
+                    
+                    <div class="card card bg-success mb-2">
+                        <div class="card-block">
+                        <!-- el mb-2 es una clase de bootsrap que te pone un margin bottom de 2 pixeles supongo -->
+                        <!-- el card success pone el fondo verde -->
+                        <!-- utilizamos esto para poder poner la salida -->
+                            <h4>Kilogramos:</h4>
+                            <div id="outputenkilogramos">
+                                <!-- Esto es hacia donde vamos a jalar el resultado de javascript una vez que lo hayamos calculado -->
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- card 3 en onzas -->
+
+                    <div class="card card bg-danger mb-2">
+                        <div class="card-block">
+                            <!-- el mb-2 es una clase de bootsrap que te pone un margin bottom de 2 pixeles supongo -->
+                            <!-- el card danger pone el fondo rojo -->
+                        <!-- utilizamos esto para poder poner la salida -->
+                            <h4>Onzas:</h4>
+                            <div id="outputenonzas">
+                                <!-- Esto es hacia donde vamos a jalar el resultado de javascript una vez que lo hayamos calculado -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <img class= "img-fluid offset-md--3" src="raton.jpg" alt="ratoncitomamado">
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="logica.js"></script>
+</body>
+</html>

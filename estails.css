@@ -1,0 +1,8 @@
+body
+{
+    margin-top: 70px;
+    /* aquí echamos todo el body 70 pixeles para abajo porque le estamos agregando un margen de arriba de eso */
+    background: #333;
+    color: #fff;
+
+}
